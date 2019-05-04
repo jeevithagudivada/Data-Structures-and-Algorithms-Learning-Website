@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>BubbleSort Quiz</title>
+ <link rel="stylesheet" href="css/quiz1.css">
+</head>
+<body>
+<div>
+<header class="header" role="banner">
+        <ul>
+            <li class="active"><a href="home.html">Home</a>
+            </li>
+            </li>
+             <li><a href="about.html">About</a>
+            </li>
+            <li><a href="graphics.html">Graphics</a>
+            </li>
+            <li><a href="quiz.html">Quiz</a>
+            </li>
+            <li><a href="code.html">Code</a>
+            </li>
+             <li><a href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+        </header>
+
+        <br>
+        <br>
+        </body>
+        <body id="one">
+  <div id="container">
+      <h1>Bubble Sort Quiz</h1>
+      <p class="desc"></p>
+      <hr />
+
+      <section>
+            
+
+            <form name="quizForm" onsubmit="return submitAnswers()">
+
+                  <h3>1)In a bubble sort structure, there is/are?</h3>
+                  <input type="radio" name="q1" value="a" id="q1a" />a.A single for loop
+                  <br />
+                  <input type="radio" name="q1" value="b" id="q1b" />b.Three for loops, all separate
+                  <br />
+                  <input type="radio" name="q1" value="c" id="q1c" />c.A while loop
+                  <br />
+                  <input type="radio" name="q1" value="d" id="q1d" />d.Two for loops, one nested in the other
+                  <br />
+
+
+                  <h3>2.What is the maximum number of comparisons if there are 5 elements in array x? </h3>
+                  <input type="radio" name="q2" value="a" id="q2a" /> 10
+                  <br />
+                  <input type="radio" name="q2" value="b" id="q2b" /> 2
+                  <br />
+                  <input type="radio" name="q2" value="c" id="q2c" /> 5
+                  <br />
+                  <input type="radio" name="q2" value="d" id="q2d" /> 25
+                  <br />
+
+                  <h3>3.What are the worst case and best case time complexity of bubble sort consequently? </h3>
+                  <input type="radio" name="q3" value="a" id="q3a" />O(n), O(n2)
+                  <br />
+                  <input type="radio" name="q3" value="b" id="q3b" />O(n2), O(n3)
+                  <br />
+                  <input type="radio" name="q3" value="c" id="q3c" />O(n), O(n3)
+                  <br />
+                  <input type="radio" name="q3" value="d" id="q3d" /> None of the above
+                  <br />
+
+                  <h3>4.What is the max. number of comparisons that can take place when a bubble sort is implemented? Assume there are n elements in the array?</h3>			  
+				  <input type="radio" name="q4" value="a" id="q4a" /> (1/2)(n-1)
+                  <br />
+                  <input type="radio" name="q4" value="b" id="q4b" /> (1/2)n(n-1)
+                  <br />
+                  <input type="radio" name="q4" value="c" id="q4c" /> (1/4)n(n-1)
+                  <br />
+                  <input type="radio" name="q4" value="d" id="q4d" /> None of the above
+                  <br />
+
+                  <h3>5.What are the correct intermediate steps of the following data set when it is being sorted with the bubble sort? 15,20,10,18</h3>
+                  <input type="radio" name="q5" value="a" id="q5a" /> 15,10,20,18 -- 15,10,18,20 -- 10,15,18,20
+                  <br />
+                  <input type="radio" name="q5" value="b" id="q5b" /> 10, 20,15,18 -- 10,15,20,18 -- 10,15,18,20
+                  <br />
+                  <input type="radio" name="q5" value="c" id="q5c" /> 15,20,10,18 -- 15,10,20,18 -- 10,15,20,18 -- 10,15,18,20
+                  <br />
+                  <input type="radio" name="q5" value="d" id="q5d" /> 15,18,10,20 -- 10,18,15,20 -- 10,15,18,20 -- 10,15,18,20
+                  
+
+                  <br />
+
+                  <input type="submit" value="Submit" />
+<br>
+            </form>
+			<div id="results"></div>
+      </section>
+
+</div>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="js/quiz3.js"></script>
+	
+</body>
+</html>

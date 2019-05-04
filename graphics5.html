@@ -1,0 +1,82 @@
+<html>
+<head>
+<title> Prims & Kruskal </title>
+<link rel="stylesheet" href="css/graphics5.css">
+</head>
+<body>
+<div>
+<header class="header" role="banner">
+        <ul>
+            <li class="active"><a href="home.html">Home</a>
+            </li>
+			<li><a href="about.html">About</a>
+            </li>
+            <li><a href="graphics.html">Graphics</a>
+            </li>
+            <li><a href="quiz.html">Quiz</a>
+            </li>
+            <li><a href="code.html">Code</a>
+            </li>
+             <li><a href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+        </header>
+
+        <br>
+        <br>
+		<br>
+		<div id="container">
+		<center><h1>Prims & Kruskal</h1>
+        <br><table>
+		<tr>
+			<td class="center">
+				<h3>Number of vertices </h3> <input size="3" style="height:30px; width:150px;" type="text" value="" name="nVertices" id="nVertices" /><br>
+				<h3>Edges not less than </h3><input size="3" style="height:30px; width:150px;" type="text" value="" name="nEdges"    id="nEdges" /><br>
+			</td>
+			<td>
+				<table class="nestedTable">
+					<tr>
+						<td class="left">
+							<input type="button" value="Generate" onclick="var f=''; if (chainOption.checked) f = 'chain'; else if (nearestOption.checked) f = 'nearest'; yGenerate(nVertices, nEdges, f, refresh.checked); yShow(cPrim); yShow(cKruskal); pPrim.disabled = pKruskal.disabled = false; value='Generate';">
+						</td>
+						<td class="left">
+						<div id="side">
+							<input type="radio" name="kind" id="chainOption" value="chain" checked> Random Depth-First Search<br/>
+							<input type="radio" name="kind" id="nearestOption" value="nearest" > Greedy Heuristic<br/>
+							<input type="checkbox" name="refresh" id="refresh" value="refresh" checked> refresh vertices<br/>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<canvas class="area" id="cPrim"    width="500" height="360"></canvas>
+			</td>
+			<td>
+				<canvas class="area" id="cKruskal" width="500" height="360"></canvas>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				Prim's Algorithm
+				<input type="button" value="Play" disabled="disabled" id="pPrim"    name="pPrim"    onclick="yPlay(cPrim, aPrim);">
+			</th>
+			<th>
+				Kruskal's Algorithm
+				<input type="button" value="Play" disabled="disabled" id="pKruskal" name="pKruskal" onclick="yPlay(cKruskal, aKruskal);">
+			</th>
+		</tr>
+	</table>
+</body>
+    
+        <script src="js/graphics5.js"></script>
+
+		
+		</div>
+      
+    
+   
+</body>
+</html>

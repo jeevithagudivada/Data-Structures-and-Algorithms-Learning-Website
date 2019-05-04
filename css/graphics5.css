@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+.header {
+    width: 100%;
+    position:absolute;
+    z-index: 1000;
+    padding-top: 0px;
+    left: 0;
+    height: 0px;
+    border: none;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0px 3px 2px 0px rgba(50, 50, 50, 0.2);
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+
+}
+h1{
+  font-family:comic sans ms;
+  color: #6D483A;
+  text-align: center;
+}
+h3{
+  font-family:comic sans ms;
+  color: #6D483A;
+  text-align: center;
+}
+
+
+ul {
+    overflow: auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    height: 20px;
+    margin-right: 0px;
+    border-right: 1px solid #1976D2;
+    padding: 0 20px;
+    display: inline;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #BBDEFB;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+
+li.active a, li a:hover {
+    color:white;
+}
+
+
+.title {
+  background:white;
+  text-transform:uppercase;
+  letter-spacing:1em;
+  text-align:center;
+  width:50%;
+  height:15%;
+  color:deepskyblue;
+}
+h1 {
+	padding-top:10px;
+  font-family: 'Pacifico', cursive;
+  font-weight:bold;
+  font-size: 34px;
+  text-align: center;
+}
+body {
+  
+  background: radial-gradient(#00bfff, #1e90ff);
+}
+div#container{
+  background:white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.125), 0 0.25rem 0.125rem 0.125rem rgba(0, 0, 0, 0.155);
+  padding: 0rem 0 0;
+  margin: 2rem auto;
+  max-width: 70rem;
+  height:50rem;
+}
+
+body {
+  font-family: "helvetica";
+  background-color: #ddd;
+  
+}
+.area {
+  background-color: #ffffff;
+	border: 4px double black;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+table {
+	text-align: center;
+	margin: auto;
+}
+
+div#side{
+	background:white;
+	color:white;
+	display:none;
+}
+table.nestedTable {
+	width: 100%;
+}
+
+td {
+	padding: 10px;
+}
+
+td.right {
+	text-align: right;
+}
+
+td.left {
+	text-align: left;
+}
+
+input[type=button]{
+	width: 150px; 
+	height:60px;
+	color: white;
+	font-family:Arial;
+	font-size:20px;
+	border:3px solid white;
+	border-radius:10px;
+	background: radial-gradient(#00bfff, #1e90ff);;
+};

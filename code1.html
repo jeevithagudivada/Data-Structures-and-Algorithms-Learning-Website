@@ -1,0 +1,74 @@
+<html>
+<head>
+<title> codes </title>
+
+    <link rel="stylesheet" href="css/code1.css">
+</head>
+<body>
+<div>
+<header class="header" role="banner">
+        <ul>
+            <li class="active"><a href="home.html">Home</a>
+            </li>
+            <li><a href="graphics.html">Graphics</a>
+            </li>
+            <li><a href="quiz.html">Quiz</a>
+            </li>
+            <li><a href="code.html">Code</a>
+            </li>
+             <li><a href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+        </header>
+
+        <br>
+        <br>
+      
+   
+</body>
+
+        <body id="one">
+  <div id="container">
+      <h1>TowersOFHanoi.java</h1>
+     <section style="padding-left:100px ">
+     
+<h3>
+<br>
+<br>
+<br>
+import java.util.Scanner;<br>
+public class TowersOfHanoi {<br>
+<br>
+   public void solve(int n, String start, String auxiliary, String end) {<br>
+       if (n == 1) {<br>
+           System.out.println(start + " -> " + end);<br>
+       } else {<br>
+           solve(n - 1, start, end, auxiliary);<br>
+           System.out.println(start + " -> " + end);<br>
+           solve(n - 1, auxiliary, start, end);<br>
+       }<br>
+   }<br>
+
+   public static void main(String[] args) {<br>
+       TowersOfHanoi towersOfHanoi = new TowersOfHanoi();<br>
+       System.out.print("Enter number of discs: ");<br>
+       Scanner scanner = new Scanner(System.in);<br>
+       int discs = scanner.nextInt();<br>
+       towersOfHanoi.solve(discs, "A", "B", "C");<br>
+   }<br>
+}<br>
+<br></h3>
+
+      </section>
+<div id="download">
+<button id="downloadMe">
+  Download Code
+</button>
+    
+        <script src="js/download1.js"></script>
+</div>
+</div>
+
+      
+</body>
+</html>

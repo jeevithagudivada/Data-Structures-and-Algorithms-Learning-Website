@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+div#container{
+  background:white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.125), 0 0.25rem 0.125rem 0.125rem rgba(0, 0, 0, 0.155);
+  padding: 10rem 0 0;
+  margin: 5rem auto;
+  max-width: 70rem;
+  height:30rem;
+}
+
+
+.header#top {
+    width: 100%;
+    position:absolute;
+    z-index: 1000;
+    padding-top: 0px;
+    left: 0;
+    height: 0px;
+    border: none;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0px 3px 2px 0px rgba(50, 50, 50, 0.2);
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+
+}
+
+
+ul#head {
+    overflow: auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+li#header {
+    height: 20px;
+    margin-right: 0px;
+    border-right: 1px solid #1976D2;
+    padding: 0 20px;
+    display: inline;
+}
+
+li#header:last-child {
+    border-right: none;
+}
+
+li#header a#ref {
+    text-decoration: none;
+    color: #BBDEFB;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+
+li#header.active a#ref, li#header a#ref:hover {
+    color:white;
+}
+ 
+
+
+body,p,h2{padding:;margin:0;}
+ul{list-style: none; padding:0; margin:0px;}
+a{text-decoration: none;}
+
+
+body {
+	background:radial-gradient(#00bfff, #1e90ff);
+	}
+
+#wrapper{
+  width:700px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  font-weight:bold;
+}
+ 
+h1{
+padding-top:200px;
+  font-family:comic sans ms;
+  color: #6D483A;
+  text-align: center;
+  }
+
+
+button{
+  background:#f1c40f;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:radial-gradient(#00bfff, #1e90ff);;
+  color:white;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f1c40f;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+
+ul#boxes{
+  margin-top: 100px;
+  height:210px;
+  font-size: 0;
+
+}
+
+ul#boxes li { 
+ 
+ position:relative;
+  bottom:-202px;
+  display:inline-block;
+  right:inherit;
+  width:100px; 
+  height:102px; 
+  background: url("http://iweb.az/minion.png") no-repeat;
+  background-size: 100px, 102px;
+  text-align:center;
+  line-height:50px;
+ 
+
+  transform: scale(0.7) translate(0, 0);
+  transition: transform .3s ease-in-out;
+
+ 
+}
+
+ul#boxes li:after{
+    content: '';
+    background: transparent;
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 14px;
+    border-radius: 50%;
+    animation: blink 4s ease-in-out infinite;
+
+}
+
+ul#boxes li:before{
+    content: '';
+    background: transparent;
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 33px;
+    border-radius: 50%;
+    animation: blink 4s ease-in-out infinite;
+}
+
+ul#boxes li.shrink {
+    transform: scale(1) translate(0, 20px);
+}
+
+ul#boxes li span{
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    top: 19px;
+    right: 12px;
+} 
+
+
+
+@keyframes blink {
+  90% {
+ background: transparent;
+  }
+
+  95% {
+    background: #F6D447;
+  }
+}

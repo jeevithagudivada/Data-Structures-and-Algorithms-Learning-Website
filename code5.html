@@ -1,0 +1,78 @@
+<html>
+<head>
+<title> Codes </title>
+
+        <link rel="stylesheet" href="css/code1.css">
+</head>
+<body>
+<div>
+<header class="header" role="banner">
+        <ul>
+            <li class="active"><a href="home.html">Home</a>
+            </li>
+            <li><a href="graphics.html">Graphics</a>
+            </li>
+            <li><a href="quiz.html">Quiz</a>
+            </li>
+            <li><a href="code.html">Code</a>
+            </li>
+             <li><a href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+        </header>
+
+        <br>
+        <br>
+      
+   
+</body>
+
+        <body id="one">
+  <div id="container">
+      <h1>Fibonacci.c</h1>
+     <section style="padding-left:100px ">
+     
+
+<h3><br>
+/* Fibonacci Series c language */<br>
+
+int main()<br>
+{<br>
+   int n, first = 0, second = 1, next, c;<br>
+ <br>
+   printf("Enter the number of terms\n");<br>
+   scanf("%d",&n);<br>
+ <br>
+   printf("First %d terms of Fibonacci series are :-\n",n);<br>
+ <br>
+   for ( c = 0 ; c < n ; c++ )<br>
+   {<br>
+      if ( c <= 1 )<br>
+         next = c;<br>
+      else<br>
+      {<br>
+         next = first + second;<br>
+         first = second;<br>
+         second = next;<br>
+      }<br>
+      printf("%d\n",next);<br>
+   }<br>
+ <br>
+   return 0;<br>
+}<br>
+
+</h3>
+
+
+      </section>
+	  <div id="download">
+<button id="downloadMe">
+  Download Code
+</button>
+    
+        <script src="js/download5.js"></script>
+</div>
+
+</div>
+</body>
+</html>

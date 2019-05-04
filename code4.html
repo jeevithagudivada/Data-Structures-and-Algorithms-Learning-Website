@@ -1,0 +1,106 @@
+<html>
+<head>
+<title> Codes </title>
+
+        <link rel="stylesheet" href="css/code1.css">
+</head>
+<body>
+<div>
+<header class="header" role="banner">
+        <ul>
+            <li class="active"><a href="home.html">Home</a>
+            </li>
+            <li><a href="graphics.html">Graphics</a>
+            </li>
+            <li><a href="quiz.html">Quiz</a>
+            </li>
+            <li><a href="code.html">Code</a>
+            </li>
+             <li><a href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+        </header>
+
+        <br>
+        <br>
+      
+   
+</body>
+
+        <body id="one">
+  <div id="container">
+      <h1>Queue.java</h1>
+     <section style="padding-left:100px ">
+     
+
+<h3><br>
+public class QueueDemo { <br> 
+ private static final int capacity = 3; <br>  
+ int arr[] = new int[capacity]; <br>   
+ int size = 0; <br>   
+ int top = -1;  <br>  
+ int rear = 0;   <br> 
+  
+ public void push(int pushedElement) {  <br>  
+  if (top < capacity - 1) { <br>   
+   top++;   <br> 
+   arr[top] = pushedElement;  <br>  
+   System.out.println("Element " + pushedElement  <br>  
+     + " is pushed to Queue !");  <br> 
+   display();  <br>  
+  } else {   <br> 
+   System.out.println("Overflow !");  <br>  
+  }   <br> 
+  
+ }  <br>  
+  
+ public void pop() {  <br>  
+  if (top >= rear) {  <br>  
+   rear++;  <br>  
+   System.out.println("Pop operation done !");  <br>  
+   display();  <br>  
+  } else {   <br> 
+   System.out.println("Underflow !");  <br>  
+  }  <br>  
+ }  <br>  
+  
+ public void display() {  <br>  
+  if (top >= rear) {  <br>  
+   System.out.println("Elements in Queue : "); <br>   
+   for (int i = rear; i <= top; i++) {  <br>  
+    System.out.println(arr[i]);  <br>  
+   }   <br> 
+  }   <br> 
+ }   <br> 
+  
+ public static void main(String[] args) { <br>   
+  QueueDemo queueDemo = new QueueDemo();  <br>  
+  queueDemo.pop();   <br> 
+  queueDemo.push(23);  <br>  
+  queueDemo.push(2); <br>   
+  queueDemo.push(73); <br>  
+  queueDemo.push(21);  <br>  
+  queueDemo.pop();  <br>  
+  queueDemo.pop();   <br> 
+  queueDemo.pop();   <br> 
+  queueDemo.pop();   <br> 
+ }  <br>  
+  
+}   <br> 
+
+</p>
+</h3>
+
+
+      </section>
+	  <div id="download">
+<button id="downloadMe">
+  Download Code
+</button>
+    
+        <script src="js/download4.js"></script>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+<head>
+<title> Factorization </title>
+<link rel="stylesheet" href="css/graphics7.css">
+
+</head>
+<body>
+<div>
+<header class="header" role="banner">
+        <ul>
+            <li class="active"><a href="home.html">Home</a>
+            </li>
+			<li><a href="about.html">About</a>
+            </li>
+            <li><a href="graphics.html">Graphics</a>
+            </li>
+            <li><a href="quiz.html">Quiz</a>
+            </li>
+            <li><a href="code.html">Code</a>
+            </li>
+             <li><a href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+        </header>
+
+        <br>
+       
+		<div id="container">
+		<div class="outer">
+  <div class="middle" >
+    <div class="inner" >
+      <div class="paddingWrapper">
+        <center>
+          <p class="title" >
+           <center><h3> Enter your number to factor below:</h3></center>
+          </p>
+          <input id="input" type="number"/>
+          <button type="button" onClick="getPrimeFactorization();">
+            Factor!
+          </button>
+          <p id="result"/>
+          <p id="product" />
+        </center>
+      </div>
+      <div id="warningDiv" class="paddingWrapper">
+        <p id="warning" style="display: none;" >
+          *** This tool guarantees accurate factorization up to 15 digits ***
+          <br/>
+          <br/>
+         
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+        <script src="js/graphics7.js"></script>
+		</div>
+      
+    
+   
+</body>
+</html>

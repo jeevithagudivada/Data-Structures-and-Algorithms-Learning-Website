@@ -1,0 +1,82 @@
+<html>
+<head>
+<title> codes </title>
+
+        <link rel="stylesheet" href="css/code1.css">
+</head>
+<body>
+<div>
+<header class="header" role="banner">
+        <ul>
+            <li class="active"><a href="home.html">Home</a>
+            </li>
+            <li><a href="graphics.html">Graphics</a>
+            </li>
+            <li><a href="quiz.html">Quiz</a>
+            </li>
+            <li><a href="code.html">Code</a>
+            </li>
+             <li><a href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+        </header>
+
+        <br>
+        <br>
+      
+   
+</body>
+
+        <body id="one">
+  <div id="container">
+      <h1>Stack.java</h1>
+     <section style="padding-left:100px ">
+     
+
+<h3>
+// Demonstrate the Stack class. <br><br>
+import java.util.*; <br>
+class StackDemo { <br>
+static void showpush(Stack st, int a) {<br> 
+st.push(new Integer(a)); <br>
+System.out.println("push(" + a + ")"); <br>
+System.out.println("stack: " + st); <br>
+} <br>
+static void showpop(Stack st) { <br>
+System.out.print("pop -> "); <br>
+Integer a = (Integer) st.pop(); <br>
+System.out.println(a); <br>
+System.out.println("stack: " + st); <br>
+} <br>
+public static void main(String args[]) { <br>
+Stack st = new Stack(); <br>
+System.out.println("stack: " + st); <br>
+showpush(st, 42); <br>
+showpush(st, 66); <br>
+showpush(st, 99); <br>
+showpop(st); <br>
+showpop(st); <br>
+showpop(st); <br>
+try { <br>
+showpop(st); <br>
+} catch (EmptyStackException e) { <br>
+System.out.println("empty stack"); <br>
+} <br>
+} <br>
+}<br>
+</h3>
+
+
+      </section>
+	  <div id="download">
+<button id="downloadMe">
+  Download Code
+</button>
+    
+        <script src="js/download2.js"></script>
+</div>
+
+</div>   
+   
+</body>
+</html>

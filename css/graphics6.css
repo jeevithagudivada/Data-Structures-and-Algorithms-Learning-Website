@@ -1,0 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+span,button,input,div,h1,h3,small {
+  font-family: 'Source Code Pro';
+}
+h1{
+  font-family:comic sans ms;
+  color: #6D483A;
+  text-align: center;
+} 
+
+h3,small{
+  color:#ccc;
+  text-shadow:1px 1px 1px #fff;
+}
+
+.pascal,.inputPascal,.buttonPascal,.pascalElm {
+  font-size: 1rem;
+  margin: 10px auto;
+}
+
+.inputPascal {
+	width:300px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  border: 5px solid skyblue;
+  background: deepskyblue;
+}
+
+.warning {
+  background: lightpink;
+  color: red;
+  box-shadow: 0 4px 30px deeppink inset;
+  border: 5px solid pink;
+}
+
+.warningb {
+  background: lightpink;
+  color:white;
+}
+
+.buttonPascal {
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.spanPascal,.spanPascalSmall {
+  padding: 8px;
+  min-width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 6px;
+  background: #fff;
+  margin: 0 15px;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 2px 2px 4px #aaa;  
+  opacity:0;
+}
+
+.spanPascalSmall {
+  font-size: 11px;
+  padding: 3px;
+  min-width: 12px;
+  height: 12px;
+  line-height: 12px;
+  border-radius: 3px;
+  background: #fff;
+  margin:0 11px;
+}
+
+.spanPascal:nth-of-type(2),
+.spanPascalSmall:nth-of-type(2),
+.hl { 
+  background:#ddd;
+}
+
+.pascalElm:last-child > .spanPascal:nth-child(2),
+.pascalElm:last-child > .spanPascalSmall:nth-child(2),
+.end {
+  background:#333;
+  color:#fff;
+}
+
+input[type="text"]:focus,
+input[type="text"]:active {
+  outline: 0;
+  outline: none;
+}
+
+a.buttonlink{
+ text-decoration:none;
+  background:white;
+  box-shadow:0 0 4px #ddd inset;
+  font-size:.7rem;
+  padding:5px 10px;
+  border-radius:3px;
+  color:#999;
+}
+
+a.buttonlink:hover{
+  box-shadow:0 -2px 4px #ddd inset;
+}
+
+a.buttonlink:active{
+  color:#333;
+  box-shadow:0 2px 4px #ddd inset;
+}
+.header {
+    width: 100%;
+    position:absolute;
+    z-index: 1000;
+    padding-top: 0px;
+    left: 0;
+    height: 0px;
+    border: none;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0px 3px 2px 0px rgba(50, 50, 50, 0.2);
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+
+}
+
+
+ul {
+    overflow: auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    height: 20px;
+    margin-right: 0px;
+    border-right: 1px solid #1976D2;
+    padding: 0 20px;
+    display: inline;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #BBDEFB;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+
+li.active a, li a:hover {
+    color:white;
+}
+
+
+.title {
+  background:white;
+  text-transform:uppercase;
+  letter-spacing:1em;
+  text-align:center;
+  width:50%;
+  height:15%;
+  color:deepskyblue;
+  
+}
+h1 {
+  padding-top:0px;
+  font-family: 'Pacifico', cursive;
+  font-weight:bold;
+  font-size: 34px;
+  text-align: center;
+ 
+  
+}
+body {
+  
+  background:radial-gradient(#00bfff, #1e90ff);
+}
+div#container{
+  background:white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.125), 0 0.25rem 0.125rem 0.125rem rgba(0, 0, 0, 0.155);
+  padding: 1rem 0 0;
+  margin: 2rem auto;
+  max-width: 75rem;
+  height:1000px;;
+}
